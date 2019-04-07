@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Name"
+        android:textColorHint="#fff"
+        android:ems="10"
+        android:layout_below="@+id/textView"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edName" />
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="password1"
+        android:textColorHint="#fff"
+        android:ems="10"
+        android:layout_below="@+id/edName"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edPas"
+        />
+
+
+    <TextView
+        android:id="@+id/edPhone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="phone"
+        android:textColorHint="#fff"
+        android:ems="10"
+        android:layout_below="@+id/edPas"
+        android:layout_marginTop="20dp" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Emile"
+        android:textColorHint="#FFFFFF"
+        android:ems="10"
+        android:layout_below="@+id/edPhone"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edEmil" />
+
+
+    <Button
+        android:id="@+id/out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etpas"
+        android:layout_marginTop="400dp"
+        android:layout_weight="1"
+        android:background="#40FFFF00"
+        android:onClick="out"
+        android:text="LOG OUT "
+        app:layout_constraintStart_toStartOf="@+id/log"
+        app:layout_constraintTop_toTopOf="@+id/rg" />
+
+</RelativeLayout>
